@@ -8,9 +8,22 @@ Lists all events over 4 SDs (relative to the climate of the previous decade) fro
 
 - reg_mean_calc_ERA5.m
 - miroc_run_plume_v2.py
-- ???
+- ??? 
+
+Assumed pseudo logic: 
+
+    for all frames in generated TS ERA5 or MIROC 
+    where region not in inconsistent regions 
+        mask_regs from Alan: not clear how calculated.
+    where sd = number of SDs from the mean based on 10-year rolling
+    where metric sd >= 4
+    show results from merged frames ERA5 and MIROC
+    sort by max(sdERA5, sdMIROC) desc
+
 
 ## consistent between the two datasets
+
+
 
     mask_regs = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1,0,1,0,1,0,0,0,1,1,1,0,1,0,0,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,0,1,1,0,1,0,1,1,0,0,1,1,0,1,1,1,0]
 
