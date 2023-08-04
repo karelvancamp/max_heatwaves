@@ -2,6 +2,7 @@
 
 Thompson et al 2022. The 2021 western North America heatwave amogst the most extreme events ever recorded globally.
 Code for the analysis and figures
+See also https://github.com/vikki-thompson/extremes
 03/03/2022
 
 https://www.science.org/doi/10.1126/sciadv.abm6860
@@ -21,4 +22,5 @@ Data used is open access:
 
  - ERA5 reanlysis
  - JRA55 reanlysis
- - CMIP6 simulations for CanESM5 and MIROC6 
+ - CMIP6 simulations for CanESM5 and MIROC6
+   
